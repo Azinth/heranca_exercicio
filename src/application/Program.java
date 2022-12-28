@@ -1,3 +1,5 @@
+package application;
+
 import entities.ImportedProduct;
 import entities.Product;
 import entities.UsedProduct;
@@ -7,7 +9,7 @@ import java.util.*;
 
 import static entities.UsedProduct.sdf;
 
-public class Main {
+public class Program {
     public static void main(String[] args) throws ParseException {
 
         Locale.setDefault(Locale.US);
@@ -46,7 +48,7 @@ public class Main {
             }
             }
         System.out.println("");
-        System.out.println("PRICE TAGS:");
+        System.out.println("PRICE TAGS: ");
         for (Product prod : list){
             System.out.println(prod.priceTag());
         }
